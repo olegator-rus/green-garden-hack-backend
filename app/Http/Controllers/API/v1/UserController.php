@@ -3,10 +3,9 @@
 namespace App\Http\Controllers\API\v1;
 
 use App\Models\Owner;
+use App\Models\Machinist;
 use App\Http\Requests\User\IdRequest;
-use App\Http\Requests\User\ImportRequest;
 use App\Http\Requests\User\UpdateRequest;
-use App\Http\Requests\User\ReassignRequest;
 use App\Http\Resources\User\User;
 use App\Services\UserService;
 use App\Traits\JsonResponds;
@@ -56,6 +55,26 @@ class UserController extends Controller
             return $this->success(
                 Lang::get('owners.all'),
                 Owner::all()
+            );
+        }
+        catch(\Exception $e)
+        {
+            return $this->failure($e->getMessage());
+        }
+    }
+
+    /**
+     * Получить данные организации.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function machinists() : Response
+    {
+        try
+        {
+            return $this->success(
+                Lang::get('owners.all'),
+                Machinist::all()
             );
         }
         catch(\Exception $e)
@@ -125,39 +144,6 @@ class UserController extends Controller
     }
 
     /**
-     * Метод переназначение пользователя
-     * (назначения новой роли пользователя).
-     *
-     * @param \App\Http\Requests\User\ReassignRequest $request
-     * @param \App\Services\UserService $userService
-     * @return \Illuminate\Http\Response
-     */
-    public function reassign(ReassignRequest $request,
-                             UserService $userService) : Response
-    {
-        DB::beginTransaction();
-        try
-        {
-            // Определяем ID пользователя и новую роль
-            $userId = (int) $request->id;
-            $role = (string) $request->role;
-            // Обновляем данные
-            $userService->changeRole($userId, $role);
-            // Завершаем транзакцию
-            DB::commit();
-            // Возвращаем статус и данные
-            return $this->success(
-                Lang::get('user.reassigned')
-            );
-
-        }
-        catch(\Exception $e)
-        {
-            return $this->failure($e->getMessage());
-        }
-    }
-
-    /**
      * Получить информацию о пользователе.
      *
      * @param \App\Services\UserService $userService
@@ -180,34 +166,5 @@ class UserController extends Controller
         }
     }
 
-    /**
-     * Экспортировать список новых пользователей платформы.
-     *
-     * @param \App\Http\Requests\User\ImportRequest $request
-     * @param \App\Services\UserService $userService
-     * @return \Illuminate\Http\Response
-     */
-    public function import(ImportRequest $request,
-                           UserService $userService) : Response
-    {
-        DB::beginTransaction();
-        try
-        {
-            // Определяем ID пользователя для обновления
-            $fileId = (string) $request->file_id;
-            // Получаем ссылку на таблицу пользователей
-            $userService->importUserTable($fileId);
-            // Завершаем транзакцию
-            DB::commit();
-            return $this->success(
-                Lang::get('user.imported')
-            );
-        }
-        catch(\Exception $e)
-        {
-            DB::rollBack();
-            return $this->failure($e->getMessage());
-        }
-    }
 
 }

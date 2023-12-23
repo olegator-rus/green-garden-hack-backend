@@ -26,6 +26,7 @@ Route::group(['prefix' => 'v1'], function () {
                 Route::post('/me', [ UserController::class, 'me' ]);
                 Route::post('/logout', [ AuthController::class, 'logout' ]);
                 Route::get('/legend', [ UserController::class, 'legend' ]);
+                Route::get('/machinists', [ UserController::class, 'machinists' ]);
             });
 
             Route::group(['middleware' => 'role:admin'], function () {

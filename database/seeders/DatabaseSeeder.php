@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(PermissionsSeeder::class);
         $this->call(DirectionSeeder::class);
+        $this->call(MachinistSeeder::class);
         $this->call(OwnerSeeder::class);
         $this->call(RollingSeeder::class);
 

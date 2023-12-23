@@ -34,9 +34,9 @@ class ActivityLogger
         try
         {
             // Если логер выключен, прерываем скрипт
-            if($this->activate == false) return;
-            $activityService = app(ActivityService::class);
-            $activityService->createActivity($request);
+            // if($this->activate == false) return;
+            // $activityService = app(ActivityService::class);
+            // $activityService->createActivity($request);
         } catch(\Exception $e)
         {
             Log::error($e->getMessage());
