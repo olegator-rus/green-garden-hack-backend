@@ -1,602 +1,810 @@
 {
-  "stationsList": [
-    {
-      "id": 1,
-      "title": "Новокузнецк-Северный",
-      "isLoginStation": true
-    },
-    {
-      "id": 2,
-      "title": "Томусинская",
-      "isLoginStation": false
-    },
-    {
-      "id": 3,
-      "title": "Курегеш",
-      "isLoginStation": false
-    }
-  ],
-  "stationsData": [
-    {
-      "station": {
+    "stationsList": [
+        {
+            "id": 1,
+            "title": "Новокузнецк-Северный",
+            "isLoginStation": true
+        },
+        {
+            "id": 2,
+            "title": "Томусинская",
+            "isLoginStation": false
+        },
+        {
+            "id": 3,
+            "title": "Курегеш",
+            "isLoginStation": false
+        },
+        {
+            "id": 4,
+            "title": "Шерегеш",
+            "isLoginStation": false
+        },
+        {
+            "id": 5,
+            "title": "Кавказская",
+            "isLoginStation": false
+        },
+        {
+            "id": 6,
+            "title": "Морская (ЖД-порт)",
+            "isLoginStation": false
+        },
+        {
+            "id": 7,
+            "title": "Ростов-Север",
+            "isLoginStation": false
+        },
+        {
+            "id": 8,
+            "title": "РСВ ЖД-2",
+            "isLoginStation": false
+        }
+    ],
+    "stationsData": [
+        {
+        "station": {
+            "id": 1,
+            "name": "НОВОКУЗНЕЦК-СЕВЕРНЫЙ"
+        },
+        "park": {
+            "id": 10,
+            "name": "ТЭЦ"
+        },
+        "way": { "id": 1, "name": "10A" },
+        "maxCarriagesCount": 28,
+        "locomotives": [
+            {
+            "id": 1,
+            "inventoryNumber": "422412",
+            "direction": "LEFT"
+            },
+            {
+            "id": 2,
+            "inventoryNumber": "123456",
+            "direction": "RIGHT"
+            }
+        ],
+        "wagons": [
+            {
+            "id": 1,
+            "inventoryNumber": "53532685",
+            "position": 1,
+            "type": "HalfCarriage",
+            "isSick": false,
+            "cargo": "LadenOutput",
+            "operationState": "WithoutOperation",
+            "idleDaysLength": 5,
+            "owner": "HTC",
+            "isWithHatch": false,
+            "loadCapacity": 69.5,
+            "daysToRepair": 96,
+            "kilometersLeft": 42992,
+            "isDirty": false,
+            "note1": "TestNote1",
+            "note2": "TestNote2"
+            },
+            {
+            "id": 2,
+            "inventoryNumber": "214121",
+            "position": 2,
+            "type": "HalfCarriage",
+            "isSick": false,
+            "cargo": "LadenInput",
+            "operationState": "InProgress",
+            "idleDaysLength": 11,
+            "owner": "GK",
+            "isWithHatch": false,
+            "loadCapacity": 75,
+            "daysToRepair": 96,
+            "kilometersLeft": 42992,
+            "isDirty": false,
+            "note1": "TestNote1",
+            "note2": "Note2"
+            },
+            {
+            "id": 3,
+            "inventoryNumber": "4523122",
+            "position": 3,
+            "type": "HalfCarriage",
+            "isSick": false,
+            "cargo": "Empty",
+            "operationState": "Finished",
+            "idleDaysLength": 5,
+            "owner": "GK",
+            "isWithHatch": false,
+            "loadCapacity": 69.5,
+            "daysToRepair": 96,
+            "kilometersLeft": 212,
+            "isDirty": false,
+            "note1": "",
+            "note2": ""
+            },
+            {
+            "id": 4,
+            "inventoryNumber": "4523122",
+            "position": 4,
+            "type": "HalfCarriage",
+            "isSick": false,
+            "cargo": "Empty",
+            "operationState": "NotArrived",
+            "idleDaysLength": 5,
+            "owner": "GK",
+            "isWithHatch": false,
+            "loadCapacity": 69.5,
+            "daysToRepair": 96,
+            "kilometersLeft": 212,
+            "isDirty": false,
+            "note1": "",
+            "note2": ""
+            }
+        ],
+        "isVirtual": false
+        },
+        {
+        "station": {
+            "id": 1,
+            "name": "НОВОКУЗНЕЦК-СЕВЕРНЫЙ"
+        },
+        "park": {
+            "id": 10,
+            "name": "ТЭЦ"
+        },
+        "way": { "id": 2, "name": "8B" },
+        "maxCarriagesCount": 134,
+        "locomotives": [
+            {
+            "id": 3,
+            "inventoryNumber": "432121",
+            "direction": "RIGHT"
+            }
+        ],
+        "wagons": [
+            {
+            "id": 5,
+            "inventoryNumber": "321312",
+            "position": 1,
+            "type": "HalfCarriage",
+            "isSick": false,
+            "cargo": "LadenOutput",
+            "operationState": "WithoutOperation",
+            "idleDaysLength": 5,
+            "owner": "HTC",
+            "isWithHatch": false,
+            "loadCapacity": 69.5,
+            "daysToRepair": 96,
+            "kilometersLeft": 42992,
+            "isDirty": false,
+            "note1": "TestNote1",
+            "note2": "TestNote2"
+            },
+            {
+            "id": 6,
+            "inventoryNumber": "324123",
+            "position": 2,
+            "type": "HalfCarriage",
+            "isSick": false,
+            "cargo": "LadenInput",
+            "operationState": "InProgress",
+            "idleDaysLength": 11,
+            "owner": "GK",
+            "isWithHatch": false,
+            "loadCapacity": 75,
+            "daysToRepair": 96,
+            "kilometersLeft": 42992,
+            "isDirty": false,
+            "note1": "TestNote1",
+            "note2": "Note2"
+            },
+            {
+            "id": 7,
+            "inventoryNumber": "453112",
+            "position": 3,
+            "type": "RollPlatform",
+            "isSick": false,
+            "cargo": "Empty",
+            "operationState": "Finished",
+            "idleDaysLength": 5,
+            "owner": "GK",
+            "isWithHatch": false,
+            "loadCapacity": 69.5,
+            "daysToRepair": 96,
+            "kilometersLeft": 212,
+            "isDirty": false,
+            "note1": "",
+            "note2": ""
+            },
+            {
+            "id": 8,
+            "inventoryNumber": "786766",
+            "position": 4,
+            "type": "RollPlatform",
+            "isSick": false,
+            "cargo": "Empty",
+            "operationState": "NotArrived",
+            "idleDaysLength": 5,
+            "owner": "GK",
+            "isWithHatch": false,
+            "loadCapacity": 69.5,
+            "daysToRepair": 96,
+            "kilometersLeft": 212,
+            "isDirty": false,
+            "note1": "",
+            "note2": ""
+            }
+        ],
+        "isVirtual": false
+        },
+        {
+        "station": {
+            "id": 1,
+            "name": "НОВОКУЗНЕЦК-СЕВЕРНЫЙ"
+        },
+        "park": {
+            "id": 10,
+            "name": "ТЭЦ"
+        },
+        "way": { "id": 2, "name": "3С" },
+        "maxCarriagesCount": 134,
+        "locomotives": [
+            {
+            "id": 3,
+            "inventoryNumber": "432121",
+            "direction": "RIGHT"
+            }
+        ],
+        "wagons": [
+            {
+            "id": 9,
+            "inventoryNumber": "534287",
+            "position": 1,
+            "type": "Hopper",
+            "isSick": false,
+            "cargo": "LadenOutput",
+            "operationState": "WithoutOperation",
+            "idleDaysLength": 5,
+            "owner": "HTC",
+            "isWithHatch": false,
+            "loadCapacity": 69.5,
+            "daysToRepair": 96,
+            "kilometersLeft": 42992,
+            "isDirty": false,
+            "note1": "TestNote1",
+            "note2": "TestNote2"
+            },
+            {
+            "id": 10,
+            "inventoryNumber": "2212438",
+            "position": 2,
+            "type": "Tank",
+            "isSick": false,
+            "cargo": "LadenInput",
+            "operationState": "InProgress",
+            "idleDaysLength": 11,
+            "owner": "GK",
+            "isWithHatch": false,
+            "loadCapacity": 75,
+            "daysToRepair": 96,
+            "kilometersLeft": 42992,
+            "isDirty": false,
+            "note1": "TestNote1",
+            "note2": "Note2"
+            }
+        ],
+        "isVirtual": false
+        },
+        {
+        "station": {
+            "id": 1,
+            "name": "НОВОКУЗНЕЦК-СЕВЕРНЫЙ"
+        },
+        "park": {
+            "id": 213,
+            "name": "Томусинская"
+        },
+        "way": { "id": 231, "name": "Томусинская" },
+        "maxCarriagesCount": 134,
+        "locomotives": [],
+        "wagons": [],
+        "isVirtual": true
+        },
+        {
+        "station": {
+            "id": 1,
+            "name": "НОВОКУЗНЕЦК-СЕВЕРНЫЙ"
+        },
+        "park": {
+            "id": 4232,
+            "name": "Курегеш"
+        },
+        "way": { "id": 1231, "name": "Курегеш" },
+        "maxCarriagesCount": 134,
+        "locomotives": [],
+        "wagons": [],
+        "isVirtual": true
+        },
+        {
+        "station": {
+            "id": 2,
+            "name": "Томусинская"
+        },
+        "park": {
+            "id": 1231,
+            "name": "3D"
+        },
+        "way": { "id": 3123, "name": "21" },
+        "maxCarriagesCount": 134,
+        "locomotives": [],
+        "wagons": [],
+        "isVirtual": false
+        },
+        {
+        "station": {
+            "id": 2,
+            "name": "Томусинская"
+        },
+        "park": {
+            "id": 123455,
+            "name": "Новокузнецк-Северный"
+        },
+        "way": { "id": 423, "name": "Новокузнецк-Северный" },
+        "maxCarriagesCount": 134,
+        "locomotives": [],
+        "wagons": [],
+        "isVirtual": true
+        },
+        {
+        "station": {
+            "id": 2,
+            "name": "Томусинская"
+        },
+        "park": {
+            "id": 12433,
+            "name": "Курегеш"
+        },
+        "way": { "id": 76, "name": "Курегеш" },
+        "maxCarriagesCount": 134,
+        "locomotives": [],
+        "wagons": [],
+        "isVirtual": true
+        },
+        {
+        "station": {
+            "id": 2,
+            "name": "Курегеш"
+        },
+        "park": {
+            "id": 5423,
+            "name": "1f"
+        },
+        "way": { "id": 232, "name": "8" },
+        "maxCarriagesCount": 134,
+        "locomotives": [],
+        "wagons": [],
+        "isVirtual": false
+        },
+        {
+        "station": {
+            "id": 2,
+            "name": "Курегеш"
+        },
+        "park": {
+            "id": 5423,
+            "name": "1k"
+        },
+        "way": { "id": 232, "name": "29" },
+        "maxCarriagesCount": 134,
+        "locomotives": [],
+        "wagons": [],
+        "isVirtual": true
+        },
+        {
+        "station": {
+            "id": 2,
+            "name": "Курегеш"
+        },
+        "park": {
+            "id": 8881,
+            "name": "Томусинская"
+        },
+        "way": { "id": 2380, "name": "Томусинская" },
+        "maxCarriagesCount": 134,
+        "locomotives": [],
+        "wagons": [],
+        "isVirtual": true
+        },
+        {
+        "station": {
+            "id": 2,
+            "name": "Курегеш"
+        },
+        "park": {
+            "id": 23121,
+            "name": "Новокузнецк-Северный"
+        },
+        "way": { "id": 2134, "name": "Новокузнецк-Северный" },
+        "maxCarriagesCount": 134,
+        "locomotives": [],
+        "wagons": [],
+        "isVirtual": true
+        }
+    ],
+    "wagonTypeList": [
+        "HalfCarriage",
+        "Platform",
+        "RollPlatform",
+        "UsoPlatform",
+        "Hopper",
+        "Tank",
+        "CoveredCarriage",
+        "Sdpm",
+        "Sm2",
+        "Ppsm2",
+        "Pksm2",
+        "DgkMpt",
+        "Vprs",
+        "Uk",
+        "KranKj",
+        "GuideCarriage"
+    ],
+    "ownersList": [
+        "HTC",
+        "GK",
+        "ATL",
+        "PGK",
+        "MOD",
+        "RJD",
+        "NPK",
+        "FGK",
+        "MECH",
+        "AGENT",
+        "OTHER"
+    ],
+    "operationsTypesNorms": [
+        { "operationId": 1, "minutesNorma": 10 },
+        { "operationId": 2, "minutesNorma": 15 },
+        { "operationId": 8, "minutesNorma": 10 },
+        { "operationId": 6, "minutesNorma": 30 },
+        { "operationId": 9, "minutesNorma": 25 },
+        { "operationId": 44, "minutesNorma": 25 },
+        { "operationId": 48, "minutesNorma": 20 },
+        { "operationId": 75, "minutesNorma": 12 },
+        { "operationId": 74, "minutesNorma": 8 }
+    ],
+    "operationsTypes": [
+        {
         "id": 1,
-        "name": "НОВОКУЗНЕЦК-СЕВЕРНЫЙ"
-      },
-      "park": {
-        "id": 10,
-        "name": "ТЭЦ"
-      },
-      "way": { "id": 1, "name": "10A" },
-      "maxCarriagesCount": 28,
-      "locomotives": [
-        {
-          "id": 1,
-          "inventoryNumber": "422412",
-          "direction": "LEFT"
+        "name": "Поездная работа",
+        "operations": [
+            {
+            "id": 1,
+            "name": "Ведение поезда по перегону",
+            "operationTypeId": 1
+            },
+            {
+            "id": 2,
+            "name": "Движение локомотива резервом по перегону",
+            "operationTypeId": 1
+            }
+        ]
         },
         {
-          "id": 2,
-          "inventoryNumber": "123456",
-          "direction": "RIGHT"
+        "id": 2,
+        "name": "Маневровая работа",
+        "operations": [
+            {
+            "id": 8,
+            "name": "Подача вагонов",
+            "operationTypeId": 2
+            },
+            {
+            "id": 6,
+            "name": "Перестановка вагонов",
+            "operationTypeId": 2
+            },
+            {
+            "id": 9,
+            "name": "Уборка вагонов",
+            "operationTypeId": 2
+            }
+        ]
+        },
+        {
+        "id": 8,
+        "name": "Ремонтные работы",
+        "operations": [
+            {
+            "id": 44,
+            "name": "Замена неисправного локомотива (депо)",
+            "operationTypeId": 8
+            },
+            {
+            "id": 48,
+            "name": "Ремонт подвижного состава",
+            "operationTypeId": 8
+            }
+        ]
+        },
+        {
+        "id": 11,
+        "name": "Грузовые",
+        "operations": [
+            {
+            "id": 75,
+            "name": "Погрузка",
+            "operationTypeId": 11
+            },
+            {
+            "id": 74,
+            "name": "Выгрузка",
+            "operationTypeId": 11
+            }
+        ]
         }
-      ],
-      "wagons": [
+    ],
+    "operationsList": [
         {
-          "id": 1,
-          "inventoryNumber": "53532685",
-          "position": 1,
-          "type": "HalfCarriage",
-          "isSick": false,
-          "cargo": "LadenOutput",
-          "operationState": "WithoutOperation",
-          "idleDaysLength": 5,
-          "owner": "HTC",
-          "isWithHatch": false,
-          "loadCapacity": 69.5,
-          "daysToRepair": 96,
-          "kilometersLeft": 42992,
-          "isDirty": false,
-          "note1": "TestNote1",
-          "note2": "TestNote2"
-        },
-        {
-          "id": 2,
-          "inventoryNumber": "214121",
-          "position": 2,
-          "type": "HalfCarriage",
-          "isSick": false,
-          "cargo": "LadenInput",
-          "operationState": "InProgress",
-          "idleDaysLength": 11,
-          "owner": "GK",
-          "isWithHatch": false,
-          "loadCapacity": 75,
-          "daysToRepair": 96,
-          "kilometersLeft": 42992,
-          "isDirty": false,
-          "note1": "TestNote1",
-          "note2": "Note2"
-        },
-        {
-          "id": 3,
-          "inventoryNumber": "4523122",
-          "position": 3,
-          "type": "HalfCarriage",
-          "isSick": false,
-          "cargo": "Empty",
-          "operationState": "Finished",
-          "idleDaysLength": 5,
-          "owner": "GK",
-          "isWithHatch": false,
-          "loadCapacity": 69.5,
-          "daysToRepair": 96,
-          "kilometersLeft": 212,
-          "isDirty": false,
-          "note1": "",
-          "note2": ""
-        },
-        {
-          "id": 4,
-          "inventoryNumber": "4523122",
-          "position": 4,
-          "type": "HalfCarriage",
-          "isSick": false,
-          "cargo": "Empty",
-          "operationState": "NotArrived",
-          "idleDaysLength": 5,
-          "owner": "GK",
-          "isWithHatch": false,
-          "loadCapacity": 69.5,
-          "daysToRepair": 96,
-          "kilometersLeft": 212,
-          "isDirty": false,
-          "note1": "",
-          "note2": ""
-        }
-      ],
-      "isVirtual": false
-    },
-    {
-      "station": {
-        "id": 1,
-        "name": "НОВОКУЗНЕЦК-СЕВЕРНЫЙ"
-      },
-      "park": {
-        "id": 10,
-        "name": "ТЭЦ"
-      },
-      "way": { "id": 2, "name": "8B" },
-      "maxCarriagesCount": 134,
-      "locomotives": [
-        {
-          "id": 3,
-          "inventoryNumber": "432121",
-          "direction": "RIGHT"
-        }
-      ],
-      "wagons": [
-        {
-          "id": 5,
-          "inventoryNumber": "321312",
-          "position": 1,
-          "type": "HalfCarriage",
-          "isSick": false,
-          "cargo": "LadenOutput",
-          "operationState": "WithoutOperation",
-          "idleDaysLength": 5,
-          "owner": "HTC",
-          "isWithHatch": false,
-          "loadCapacity": 69.5,
-          "daysToRepair": 96,
-          "kilometersLeft": 42992,
-          "isDirty": false,
-          "note1": "TestNote1",
-          "note2": "TestNote2"
-        },
-        {
-          "id": 6,
-          "inventoryNumber": "324123",
-          "position": 2,
-          "type": "HalfCarriage",
-          "isSick": false,
-          "cargo": "LadenInput",
-          "operationState": "InProgress",
-          "idleDaysLength": 11,
-          "owner": "GK",
-          "isWithHatch": false,
-          "loadCapacity": 75,
-          "daysToRepair": 96,
-          "kilometersLeft": 42992,
-          "isDirty": false,
-          "note1": "TestNote1",
-          "note2": "Note2"
-        },
-        {
-          "id": 7,
-          "inventoryNumber": "453112",
-          "position": 3,
-          "type": "RollPlatform",
-          "isSick": false,
-          "cargo": "Empty",
-          "operationState": "Finished",
-          "idleDaysLength": 5,
-          "owner": "GK",
-          "isWithHatch": false,
-          "loadCapacity": 69.5,
-          "daysToRepair": 96,
-          "kilometersLeft": 212,
-          "isDirty": false,
-          "note1": "",
-          "note2": ""
-        },
-        {
-          "id": 8,
-          "inventoryNumber": "786766",
-          "position": 4,
-          "type": "RollPlatform",
-          "isSick": false,
-          "cargo": "Empty",
-          "operationState": "NotArrived",
-          "idleDaysLength": 5,
-          "owner": "GK",
-          "isWithHatch": false,
-          "loadCapacity": 69.5,
-          "daysToRepair": 96,
-          "kilometersLeft": 212,
-          "isDirty": false,
-          "note1": "",
-          "note2": ""
-        }
-      ],
-      "isVirtual": false
-    },
-    {
-      "station": {
-        "id": 1,
-        "name": "НОВОКУЗНЕЦК-СЕВЕРНЫЙ"
-      },
-      "park": {
-        "id": 10,
-        "name": "ТЭЦ"
-      },
-      "way": { "id": 2, "name": "3С" },
-      "maxCarriagesCount": 134,
-      "locomotives": [
-        {
-          "id": 3,
-          "inventoryNumber": "432121",
-          "direction": "RIGHT"
-        }
-      ],
-      "wagons": [
-        {
-          "id": 9,
-          "inventoryNumber": "534287",
-          "position": 1,
-          "type": "Hopper",
-          "isSick": false,
-          "cargo": "LadenOutput",
-          "operationState": "WithoutOperation",
-          "idleDaysLength": 5,
-          "owner": "HTC",
-          "isWithHatch": false,
-          "loadCapacity": 69.5,
-          "daysToRepair": 96,
-          "kilometersLeft": 42992,
-          "isDirty": false,
-          "note1": "TestNote1",
-          "note2": "TestNote2"
-        },
-        {
-          "id": 10,
-          "inventoryNumber": "2212438",
-          "position": 2,
-          "type": "Tank",
-          "isSick": false,
-          "cargo": "LadenInput",
-          "operationState": "InProgress",
-          "idleDaysLength": 11,
-          "owner": "GK",
-          "isWithHatch": false,
-          "loadCapacity": 75,
-          "daysToRepair": 96,
-          "kilometersLeft": 42992,
-          "isDirty": false,
-          "note1": "TestNote1",
-          "note2": "Note2"
-        }
-      ],
-      "isVirtual": false
-    },
-    {
-      "station": {
-        "id": 1,
-        "name": "НОВОКУЗНЕЦК-СЕВЕРНЫЙ"
-      },
-      "park": {
-        "id": 213,
-        "name": "Томусинская"
-      },
-      "way": { "id": 231, "name": "Томусинская" },
-      "maxCarriagesCount": 134,
-      "locomotives": [],
-      "wagons": [],
-      "isVirtual": true
-    },
-    {
-      "station": {
-        "id": 1,
-        "name": "НОВОКУЗНЕЦК-СЕВЕРНЫЙ"
-      },
-      "park": {
-        "id": 4232,
-        "name": "Курегеш"
-      },
-      "way": { "id": 1231, "name": "Курегеш" },
-      "maxCarriagesCount": 134,
-      "locomotives": [],
-      "wagons": [],
-      "isVirtual": true
-    },
-    {
-      "station": {
-        "id": 2,
-        "name": "Томусинская"
-      },
-      "park": {
-        "id": 1231,
-        "name": "3D"
-      },
-      "way": { "id": 3123, "name": "21" },
-      "maxCarriagesCount": 134,
-      "locomotives": [],
-      "wagons": [],
-      "isVirtual": false
-    },
-    {
-      "station": {
-        "id": 2,
-        "name": "Томусинская"
-      },
-      "park": {
-        "id": 123455,
-        "name": "Новокузнецк-Северный"
-      },
-      "way": { "id": 423, "name": "Новокузнецк-Северный" },
-      "maxCarriagesCount": 134,
-      "locomotives": [],
-      "wagons": [],
-      "isVirtual": true
-    },
-    {
-      "station": {
-        "id": 2,
-        "name": "Томусинская"
-      },
-      "park": {
-        "id": 12433,
-        "name": "Курегеш"
-      },
-      "way": { "id": 76, "name": "Курегеш" },
-      "maxCarriagesCount": 134,
-      "locomotives": [],
-      "wagons": [],
-      "isVirtual": true
-    },
-    {
-      "station": {
-        "id": 2,
-        "name": "Курегеш"
-      },
-      "park": {
-        "id": 5423,
-        "name": "1f"
-      },
-      "way": { "id": 232, "name": "8" },
-      "maxCarriagesCount": 134,
-      "locomotives": [],
-      "wagons": [],
-      "isVirtual": false
-    },
-    {
-      "station": {
-        "id": 2,
-        "name": "Курегеш"
-      },
-      "park": {
-        "id": 5423,
-        "name": "1k"
-      },
-      "way": { "id": 232, "name": "29" },
-      "maxCarriagesCount": 134,
-      "locomotives": [],
-      "wagons": [],
-      "isVirtual": true
-    },
-    {
-      "station": {
-        "id": 2,
-        "name": "Курегеш"
-      },
-      "park": {
-        "id": 8881,
-        "name": "Томусинская"
-      },
-      "way": { "id": 2380, "name": "Томусинская" },
-      "maxCarriagesCount": 134,
-      "locomotives": [],
-      "wagons": [],
-      "isVirtual": true
-    },
-    {
-      "station": {
-        "id": 2,
-        "name": "Курегеш"
-      },
-      "park": {
         "id": 23121,
-        "name": "Новокузнецк-Северный"
-      },
-      "way": { "id": 2134, "name": "Новокузнецк-Северный" },
-      "maxCarriagesCount": 134,
-      "locomotives": [],
-      "wagons": [],
-      "isVirtual": true
-    }
-  ],
-  "wagonTypeList": [
-    "HalfCarriage",
-    "Platform",
-    "RollPlatform",
-    "UsoPlatform",
-    "Hopper",
-    "Tank",
-    "CoveredCarriage",
-    "Sdpm",
-    "Sm2",
-    "Ppsm2",
-    "Pksm2",
-    "DgkMpt",
-    "Vprs",
-    "Uk",
-    "KranKj",
-    "GuideCarriage"
-  ],
-  "ownersList": [
-    "HTC",
-    "GK",
-    "ATL",
-    "PGK",
-    "MOD",
-    "RJD",
-    "NPK",
-    "FGK",
-    "MECH",
-    "AGENT",
-    "OTHER"
-  ],
-  "operationsTypesNorms": [
-    { "operationId": 1, "minutesNorma": 10 },
-    { "operationId": 2, "minutesNorma": 15 },
-    { "operationId": 8, "minutesNorma": 10 },
-    { "operationId": 6, "minutesNorma": 30 },
-    { "operationId": 9, "minutesNorma": 25 },
-    { "operationId": 44, "minutesNorma": 25 },
-    { "operationId": 48, "minutesNorma": 20 },
-    { "operationId": 75, "minutesNorma": 12 },
-    { "operationId": 74, "minutesNorma": 8 }
-  ],
-  "operationsTypes": [
-    {
-      "id": 1,
-      "name": "Поездная работа",
-      "operations": [
-        {
-          "id": 1,
-          "name": "Ведение поезда по перегону",
-          "operationTypeId": 1
+        "visibleNumber": "23112",
+        "startDate": "2023-12-22T06:37:46.892Z",
+        "endDate": "2023-12-24T06:37:46.892Z",
+        "normalMinutesLength": 10,
+        "operationId": 8,
+        "operationName": "Подача вагонов",
+        "operationTypeId": 2,
+        "reasonId": 7,
+        "wagonsIds": [],
+        "departureStation": { "id": 1, "title": "Новокузнецк-Северный" },
+        "departurePark": {
+            "id": 10,
+            "name": "ТЭЦ"
         },
-        {
-          "id": 2,
-          "name": "Движение локомотива резервом по перегону",
-          "operationTypeId": 1
+        "departureWay": { "id": 1, "name": "10A" },
+        "destinationStation": { "id": 3, "title": "Курегеш" },
+        "destinationPark": {
+            "id": 5423,
+            "name": "1k"
+        },
+        "destinationWay": { "id": 232, "name": "29" },
+        "supplyDirection": "LEFT",
+        "locomotivesList": [
+            {
+            "id": 1,
+            "inventoryNumber": "422412",
+            "direction": "LEFT"
+            }
+        ],
+        "operationStatus": "ACTIVE",
+        "comment": ""
         }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Маневровая работа",
-      "operations": [
+    ],
+    "operationReasonsList": [
         {
-          "id": 8,
-          "name": "Подача вагонов",
-          "operationTypeId": 2
+        "id": 1,
+        "title": "Формирование подачи под выгрузку"
         },
         {
-          "id": 6,
-          "name": "Перестановка вагонов",
-          "operationTypeId": 2
+        "id": 2,
+        "title": "Подбор по характеристикам вагонов"
         },
         {
-          "id": 9,
-          "name": "Уборка вагонов",
-          "operationTypeId": 2
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Ремонтные работы",
-      "operations": [
-        {
-          "id": 44,
-          "name": "Замена неисправного локомотива (депо)",
-          "operationTypeId": 8
+        "id": 3,
+        "title": "Формирование маршрута"
         },
         {
-          "id": 48,
-          "name": "Ремонт подвижного состава",
-          "operationTypeId": 8
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "name": "Грузовые",
-      "operations": [
-        {
-          "id": 75,
-          "name": "Погрузка",
-          "operationTypeId": 11
+        "id": 4,
+        "title": "Выработка больных вагонов"
         },
         {
-          "id": 74,
-          "name": "Выгрузка",
-          "operationTypeId": 11
-        }
-      ]
-    }
-  ],
-  "operationsList": [
-    {
-      "id": 23121,
-      "visibleNumber": "23112",
-      "startDate": "2023-12-22T06:37:46.892Z",
-      "endDate": "2023-12-24T06:37:46.892Z",
-      "normalMinutesLength": 10,
-      "operationId": 8,
-      "operationName": "Подача вагонов",
-      "operationTypeId": 2,
-      "reasonId": 7,
-      "wagonsIds": [],
-      "departureStation": { "id": 1, "title": "Новокузнецк-Северный" },
-      "departurePark": {
+        "id": 5,
+        "title": "Выработка грязных вагонов"
+        },
+        {
+        "id": 6,
+        "title": "Выравнивание шапок"
+        },
+        {
+        "id": 7,
+        "title": "Подбор по собственникам"
+        },
+        {
+        "id": 8,
+        "title": "Формирование порожняка на отправление"
+        },
+        {
+        "id": 9,
+        "title": "Подбор вагонов по качеству загруженного угля"
+        },
+        {
         "id": 10,
-        "name": "ТЭЦ"
-      },
-      "departureWay": { "id": 1, "name": "10A" },
-      "destinationStation": { "id": 3, "title": "Курегеш" },
-      "destinationPark": {
-        "id": 5423,
-        "name": "1k"
-      },
-      "destinationWay": { "id": 232, "name": "29" },
-      "supplyDirection": "LEFT",
-      "locomotivesList": [
+        "title": "Переформирование маршрута"
+        },
         {
-          "id": 1,
-          "inventoryNumber": "422412",
-          "direction": "LEFT"
+        "id": 11,
+        "title": "Подбор инновационных вагонов"
         }
-      ],
-      "operationStatus": "ACTIVE",
-      "comment": ""
-    }
-  ],
-  "operationReasonsList": [
-    {
-      "id": 1,
-      "title": "Формирование подачи под выгрузку"
-    },
-    {
-      "id": 2,
-      "title": "Подбор по характеристикам вагонов"
-    },
-    {
-      "id": 3,
-      "title": "Формирование маршрута"
-    },
-    {
-      "id": 4,
-      "title": "Выработка больных вагонов"
-    },
-    {
-      "id": 5,
-      "title": "Выработка грязных вагонов"
-    },
-    {
-      "id": 6,
-      "title": "Выравнивание шапок"
-    },
-    {
-      "id": 7,
-      "title": "Подбор по собственникам"
-    },
-    {
-      "id": 8,
-      "title": "Формирование порожняка на отправление"
-    },
-    {
-      "id": 9,
-      "title": "Подбор вагонов по качеству загруженного угля"
-    },
-    {
-      "id": 10,
-      "title": "Переформирование маршрута"
-    },
-    {
-      "id": 11,
-      "title": "Подбор инновационных вагонов"
-    }
-  ]
+    ],
+    "routeData": [
+        {
+            "wagon": {
+                "id": 1,
+                "inventoryNumber": "53532685",
+                "position": 1,
+                "type": "HalfCarriage",
+                "isSick": false,
+                "cargo": "LadenOutput",
+                "operationState": "WithoutOperation",
+                "idleDaysLength": 5,
+                "owner": "HTC",
+                "isWithHatch": false,
+                "loadCapacity": 69.5,
+                "daysToRepair": 96,
+                "kilometersLeft": 42992,
+                "isDirty": false,
+                "note1": "TestNote1",
+                "note2": "TestNote2"
+            },
+            "departureStation": {
+                "id": 2,
+                "name": "Курегеш",
+                "isCheckedIn": true
+            },
+            "arrivalStation": {
+                "id": 8,
+                "name": "РСВ ЖД-2",
+                "isLoginStation": false,
+                "isCheckedIn": false
+            },
+            "inWay": "40 минут",
+            "price": "200 у. е.",
+            "routes": [
+                [
+                    {
+                        "id": 2,
+                        "name": "Курегеш",
+                        "isCheckedIn": true
+                    },
+                    {
+                        "id": 5,
+                        "name": "Кавказская",
+                        "isLoginStation": false,
+                        "isCheckedIn": true,
+                        "way": { "id": 884, "name": "А4" }
+                    },
+                    {
+                        "id": 4,
+                        "name": "Шерегеш",
+                        "isLoginStation": false,
+                        "isCheckedIn": true,
+                        "way": { "id": 884, "name": "Б2" }
+                    },
+                    {
+                        "id": 8,
+                        "name": "РСВ ЖД-2",
+                        "isLoginStation": false,
+                        "isCheckedIn": false
+                    }
+                ],
+                [
+                    {
+                        "id": 2,
+                        "name": "Курегеш",
+                        "isCheckedIn": true
+                    },
+                    {
+                        "id": 23121,
+                        "name": "Новокузнецк-Северный",
+                        "isCheckedIn": true,
+                        "way": { "id": 884, "name": "Главный" }
+                    },
+                    {
+                        "id": 8,
+                        "name": "РСВ ЖД-2",
+                        "isLoginStation": false,
+                        "isCheckedIn": false
+                    }
+                ]
+            ]
+        },
+        {
+            "wagon": {
+                "id": 7,
+                "inventoryNumber": "453112",
+                "position": 3,
+                "type": "RollPlatform",
+                "isSick": false,
+                "cargo": "Empty",
+                "operationState": "Finished",
+                "idleDaysLength": 5,
+                "owner": "GK",
+                "isWithHatch": false,
+                "loadCapacity": 69.5,
+                "daysToRepair": 96,
+                "kilometersLeft": 212,
+                "isDirty": false,
+                "note1": "",
+                "note2": ""
+            },
+            "departureStation": {
+                "id": 2,
+                "name": "Курегеш",
+                "isCheckedIn": true
+            },
+            "arrivalStation": {
+                "id": 8,
+                "name": "РСВ ЖД-2",
+                "isLoginStation": false,
+                "isCheckedIn": false
+            },
+            "inWay": "4 часа",
+            "price": "700 у. е.",
+            "routes": [
+                [
+                    {
+                        "id": 2,
+                        "name": "Курегеш",
+                        "isCheckedIn": false
+                    },
+                    {
+                        "id": 2,
+                        "name": "Томусинская",
+                        "isLoginStation": false,
+                        "isCheckedIn": false,
+                        "way": { "id": 884, "name": "Главный" }
+                    },
+                    {
+                        "id": 7,
+                        "name": "Ростов-Север",
+                        "isCheckedIn": false,
+                        "way": { "id": 884, "name": "3" }
+                    },
+                    {
+                        "id": 8,
+                        "name": "РСВ ЖД-2",
+                        "isLoginStation": false,
+                        "isCheckedIn": false
+                    }
+                ],
+                [
+                    {
+                        "id": 3,
+                        "name": "Курегеш",
+                        "isCheckedIn": false
+                    },
+
+                    {
+                        "id": 23121,
+                        "name": "Новокузнецк-Северный",
+                        "isCheckedIn": false,
+                        "way": { "id": 884, "name": "Главный" }
+                    },
+                    {
+                        "id": 8,
+                        "name": "РСВ ЖД-2",
+                        "isLoginStation": false,
+                        "isCheckedIn": false
+                    }
+                ],
+                [
+                    {
+                        "id": 2,
+                        "name": "Курегеш",
+                        "isCheckedIn": false
+                    },
+                    {
+                        "id": 6,
+                        "name": "Морская (ЖД-порт)",
+                        "isLoginStation": false,
+                        "way": { "id": 155, "name": "4A" }
+                    },
+                    {
+                        "id": 8,
+                        "name": "РСВ ЖД-2",
+                        "isLoginStation": false,
+                        "isCheckedIn": false
+                    }
+                ]
+            ]
+        }
+    ]
 }
