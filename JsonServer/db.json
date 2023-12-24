@@ -645,9 +645,9 @@
                 "note2": "TestNote2"
             },
             "departureStation": {
-                "id": 2,
-                "name": "Курегеш",
-                "isCheckedIn": true
+                "id": 1,
+                "name": "Новокузнецк-Северный",
+                "isCheckedIn": false
             },
             "arrivalStation": {
                 "id": 8,
@@ -660,9 +660,9 @@
             "routes": [
                 [
                     {
-                        "id": 2,
-                        "name": "Курегеш",
-                        "isCheckedIn": true
+                        "id": 23121,
+                        "name": "Новокузнецк-Северный",
+                        "isCheckedIn": false
                     },
                     {
                         "id": 5,
@@ -687,16 +687,18 @@
                 ],
                 [
                     {
-                        "id": 2,
-                        "name": "Курегеш",
-                        "isCheckedIn": true
-                    },
-                    {
                         "id": 23121,
                         "name": "Новокузнецк-Северный",
-                        "isCheckedIn": true,
+                        "isCheckedIn": false
+                    },
+
+                    {
+                        "id": 2,
+                        "name": "Курегеш",
+                        "isCheckedIn": false,
                         "way": { "id": 884, "name": "Главный" }
                     },
+
                     {
                         "id": 8,
                         "name": "РСВ ЖД-2",
@@ -726,9 +728,9 @@
                 "note2": ""
             },
             "departureStation": {
-                "id": 2,
-                "name": "Курегеш",
-                "isCheckedIn": true
+                "id": 1,
+                "name": "Новокузнецк-Северный",
+                "isCheckedIn": false
             },
             "arrivalStation": {
                 "id": 8,
@@ -741,8 +743,8 @@
             "routes": [
                 [
                     {
-                        "id": 2,
-                        "name": "Курегеш",
+                        "id": 1,
+                        "name": "Новокузнецк-Северный",
                         "isCheckedIn": false
                     },
                     {
@@ -767,14 +769,14 @@
                 ],
                 [
                     {
-                        "id": 3,
-                        "name": "Курегеш",
+                        "id": 1,
+                        "name": "Новокузнецк-Северный",
                         "isCheckedIn": false
                     },
 
                     {
-                        "id": 23121,
-                        "name": "Новокузнецк-Северный",
+                        "id": 2,
+                        "name": "Курегеш",
                         "isCheckedIn": false,
                         "way": { "id": 884, "name": "Главный" }
                     },
@@ -787,8 +789,8 @@
                 ],
                 [
                     {
-                        "id": 2,
-                        "name": "Курегеш",
+                        "id": 1,
+                        "name": "Новокузнецк-Северный",
                         "isCheckedIn": false
                     },
                     {
